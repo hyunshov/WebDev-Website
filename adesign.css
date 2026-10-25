@@ -1,0 +1,531 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body.present {
+    background-color: #fff0c9;
+    color: #3D2415;
+    font-size: 17px;
+    line-height: 1.55;
+    font-family: 'Playfair Display';
+}
+
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.box {
+    position: absolute;               
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;    
+    min-height: 150px;                       
+    background-color:#3D2415; 
+    color: #fffffd;                         
+    padding: 50px 0px 40px 0;           
+    box-sizing: border-box;                   
+    border: 1px solid rgba(193, 160, 107, 0.3); 
+    overflow: hidden; 
+    z-index: 2;   
+}
+
+.nav{
+    position: relative;
+    top: 35.7px;
+    left: 65.9%;
+    font-size: medium;
+    font-family: 'Playfair Display';
+    max-width: fit-content; 
+}
+
+.nav a{
+    color: #fffffd; 
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.nav a.active {
+    color: #1c9611;
+}
+
+.nav a:hover{
+    text-decoration: none;
+    margin-right: 30px;
+    color: #1c9611;
+    text-shadow: 0 0 10px rgba(35, 99, 6, 0.8);
+}
+
+.f1p {
+    max-width: 1180px;
+    margin: 0 auto;           
+    padding: 110px 45px 20px;
+}
+
+.taas {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-family: 'Playfair Display';
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #b08d57;
+    margin-bottom: 24px;
+    z-index: 3;
+}
+
+.medyo{
+    position: relative;
+    top: 70px;
+    font-family: 'Playfair Display';
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #1c9611;
+    z-index: 3;
+
+}
+
+.f1p h1 {
+    position: relative;
+    top: 20px;
+    font-family: 'Playfair Display';
+    font-size: 76px;
+    letter-spacing: -1px;
+}
+.f1p h1 .line2 {
+    position: relative;
+    top: -58px;
+    padding-left: 204px;
+}
+
+.f1p h1 em {
+    color: #0b4e05;
+}
+
+.f1p .desc {
+    font-family: 'Lora';
+    position: relative;
+    top:-50px;
+    font-size: 19px;
+    letter-spacing: 2px;
+    color: #6b4a30;
+    text-align: right;
+}
+
+
+.about-body {
+    display: grid;
+    grid-template-columns: 200px 1fr;   
+    gap: 80px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 60px 64px 130px;
+    border-top: 1px solid #b08d57;
+}
+
+.gilid {
+    position: static;         
+    top: 110px;
+    align-self: start;         
+}
+
+.label {
+    font-family: 'Lora';
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #b08d57;
+    margin-bottom: 16px;
+}
+
+.gilid ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gilid li {
+    border-top: 1px solid #b08d57;
+}
+
+.gilid li:last-child {
+    border-bottom: 1px solid #b08d57;
+}
+
+.gilid a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 15px;
+    color: #6b4a30;
+}
+
+.gilid a span {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    color: #0b4e05;
+    margin-right: 8px;
+}
+
+.gilid a:hover {
+    color: #0b4e05;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.num{
+    font-size: 12px;
+    color: #0b4e05;
+}
+.num1, .num2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.num2 .frame {
+    order: -1;
+}
+
+.last {
+    display: block;
+}
+
+.num1 h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.num1 h2 .num {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #0b4e05;
+    margin-right: 10px;
+}
+
+.frame {
+    aspect-ratio: 4 / 3;      
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.frame img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;        
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.avatar1, .avatar2, .avatar3 {
+    width: 200px;
+    height: 200px;
+    background-color: #6b4a30;
+    border: 1px solid #c9ab7f;
+    border-radius: 50%;         
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.avatar1 img, .avatar2 img, .avatar3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+.member-name {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+/*mobile dim*/
+@media (max-width: 1150px) {
+    .about-body {
+        grid-template-columns: 160px 1fr;
+        gap: 40px;
+        padding: 50px 32px 100px;
+    }
+    .nav{
+        position: relative;
+        right: 30px;
+    }
+    .num1,.num2 {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .num2 .frame {
+        order: initial;
+    }
+
+    .frame {
+        max-width: 480px;
+    }
+
+    .f1p h1 {
+        font-size: 60px;
+    }
+
+    .f1p h1 .line2 {
+        padding-left: 120px;
+        position: relative;
+        top: -20px;
+    }
+    .f1p .desc {
+        position: relative;
+        top: 3px;
+    }
+}
+
+@media (max-width: 900px) {
+    .box {
+        position: relative;
+        min-height: 110px;
+        padding: 20px 0;
+        
+    }
+
+    .nav {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.85rem;
+    }
+
+    .nav a {
+        margin-right: 12px;
+        padding: 10px 0;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .nav a:hover {
+        margin-right: 12px;
+    }
+
+    .taas {
+        position: relative;
+        text-align: right;
+        top: -130px;
+        right: -2px;
+    }
+
+    .f1p {
+        padding: 30px 24px 10px;
+    }
+
+    .medyo {
+        position: relative;
+        top: -20px;
+        margin: 10px 0 0;
+    }
+
+    .f1p h1 {
+        position: relative;
+        top: -10px;
+        font-size: 44px;
+        line-height: 1.15;
+        margin: 8px 0 0;
+    }
+
+    .f1p h1 p,.f1p h1 .line2 {
+        position: relative;
+        top: 10px;
+        padding-left: 60px;
+        display: block;
+    }
+
+    .f1p .desc {
+        position: static;
+        top: auto;
+        font-size: 15px;
+        text-align: right;
+        margin-top: 18px;
+    }
+
+    .about-body {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 24px;
+    }
+
+    .gilid {
+        width: 50%;
+        position: static;
+    }
+
+    .gilid a {
+        padding: 14px 0;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+    .gilid a:hover {
+        color: #0b4e05;
+    }
+    .num1,.num2 {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: left;
+    }
+
+    .num2 .frame {
+        order: initial;
+    }
+
+    .num1 h2,.num2 h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-top: 0;
+    }
+
+    .frame {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        justify-items: center;
+    }
+
+    .member {
+        text-align: center;
+    }
+
+    .avatar1,.avatar2,.avatar3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        min-height: 100px;
+        padding: 43px 14px;
+    }
+
+    .nav {
+        font-size: 0.78rem;
+        gap: 4px 2px;
+    }
+
+    .nav a {
+        margin-right: 8px;
+        position: relative;
+        top: 30px;
+    }
+
+    .nav a:hover {
+        margin-right: 8px;
+    }
+
+    .taas {
+        font-size: 11px;
+        letter-spacing: 3px;
+        position: relative;
+        text-align: right;
+        top: -120px;
+        right: -2px;
+    }
+
+    .f1p {
+        padding: 4px 18px 8px;
+    }
+
+    .medyo {
+        font-size: 11px;
+        letter-spacing: 3px;
+        position: relative;
+        top: -20px;
+    }
+
+    .f1p h1 {
+        font-size: 34px;
+        line-height: 1.2;
+        position: relative;
+        top: -20px;
+    }
+
+    .f1p .desc {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        line-height: 1.6;
+    }
+
+    .about-body {
+        padding: 32px 18px 90px;
+        gap: 32px;
+    }
+
+    .content {
+        gap: 48px;
+    }
+    
+    .gilid a:hover {
+        color: #0b4e05;
+}
+    .num1 h2,.num2 h2 {
+        font-size: 1.6rem;
+    }
+
+    .num1 h2 .num,.num2 h2 .num {
+        display: inline-block;
+        margin-bottom: 4px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+
+    .avatar1,.avatar2,.avatar3 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .member-name {
+        font-size: 15px;
+    }
+}
